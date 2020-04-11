@@ -17,7 +17,7 @@ public class AQService implements AQServiceImpl<AQResponse> {
 
         urlbuilder = UriComponentsBuilder.newInstance()
                 .scheme("http")
-                .host("http://api.weatherbit.io/")
+                .host("api.weatherbit.io/")
                 .path("/v2.0/current/airquality")
                 .queryParam("city", "Aveiro")
                 .queryParam("key", "887e0b117b414dccac1d127a785deab9");
@@ -26,7 +26,7 @@ public class AQService implements AQServiceImpl<AQResponse> {
 
     @Override
     public AQResponse getAirQuality(String city_name) {
-        String url = urlbuilder.replaceQueryParam("city_name", city_name).build().toUriString();
+        String url = urlbuilder.replaceQueryParam("city", city_name).build().toUriString();
         return new RestTemplate().getForObject(url, AQResponse.class);
     }
 }

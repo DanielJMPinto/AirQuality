@@ -23,7 +23,7 @@ import java.util.List;
 })
 public class Data {
     @JsonProperty("mold_level")
-    private Double mold_level;
+    private int mold_level;
     @JsonProperty("aqi")
     private Double aqi;
     @JsonProperty("pm10")
@@ -37,22 +37,22 @@ public class Data {
     @JsonProperty("so2")
     private Double so2;
     @JsonProperty("pollen_level_tree")
-    private Double pollen_level_tree;
+    private int pollen_level_tree;
     @JsonProperty("pollen_level_weed")
-    private Double pollen_level_weed;
+    private int pollen_level_weed;
     @JsonProperty("no2")
     private Double no2;
     @JsonProperty("pm25")
     private Double pm25;
     @JsonProperty("pollen_level_grass")
-    private Double pollen_level_grass;
+    private int pollen_level_grass;
 
     @JsonProperty("mold_level")
-    public Double getMold_level() {
+    public int getMold_level() {
         return mold_level;
     }
     @JsonProperty("mold_level")
-    public void setMold_level(Double mold_level) {
+    public void setMold_level(int mold_level) {
         this.mold_level = mold_level;
     }
     @JsonProperty("aqi")
@@ -104,19 +104,19 @@ public class Data {
         this.so2 = so2;
     }
     @JsonProperty("pollen_level_tree")
-    public Double getPollen_level_tree() {
+    public int getPollen_level_tree() {
         return pollen_level_tree;
     }
     @JsonProperty("pollen_level_tree")
-    public void setPollen_level_tree(Double pollen_level_tree) {
+    public void setPollen_level_tree(int pollen_level_tree) {
         this.pollen_level_tree = pollen_level_tree;
     }
     @JsonProperty("pollen_level_weed")
-    public Double getPollen_level_weed() {
+    public int getPollen_level_weed() {
         return pollen_level_weed;
     }
     @JsonProperty("pollen_level_weed")
-    public void setPollen_level_weed(Double pollen_level_weed) {
+    public void setPollen_level_weed(int pollen_level_weed) {
         this.pollen_level_weed = pollen_level_weed;
     }
     @JsonProperty("no2")
@@ -136,11 +136,11 @@ public class Data {
         this.pm25 = pm25;
     }
     @JsonProperty("pollen_level_grass")
-    public Double getPollen_level_grass() {
+    public int getPollen_level_grass() {
         return pollen_level_grass;
     }
     @JsonProperty("pollen_level_grass")
-    public void setPollen_level_grass(Double pollen_level_grass) {
+    public void setPollen_level_grass(int pollen_level_grass) {
         this.pollen_level_grass = pollen_level_grass;
     }
 }

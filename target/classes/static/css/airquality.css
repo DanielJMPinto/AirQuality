@@ -3,20 +3,9 @@ body {
 }
 
 
-hr {
-    border-top: #333 solid 1px;
-}
-
 .jumbotron {
     background-color: black;
     padding-top: 48px;
-}
-
-
-.city-image-container {
-    position:relative;
-    max-width: 1600px;
-    margin: 0 auto;
 }
 
 
@@ -81,7 +70,7 @@ span#current-weather-units {
 
 .weather-table-container {
     text-align:center;
-    color:#666;
+    color:#cccccc;
     margin-top:35px;
     font-family: 'Open Sans', sans-serif;
     /* border: #31708f solid 2px; */
@@ -96,10 +85,11 @@ span#current-weather-units {
 
 .weather-table-body {
     background: rgba(49, 112, 143, 0.24);
+    height:160px;
 }
 
-.forecast-date {
-    font-size: small;
+.airquality_units {
+    font-size:20px;
 }
 
 .weather-table-row {
@@ -110,7 +100,7 @@ span#current-weather-units {
 }
 
 .weather-description {
-    font-size:25px;
+    font-size:23px;
 }
 
 .weather-description span{
@@ -130,6 +120,16 @@ span#current-weather-units {
     margin: 0 auto;
 }
 
+.form-control-borderless {
+    border: none;
+}
+
+.form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
 span.min-max-temp {
     position: absolute;
     top: 5px;
@@ -138,6 +138,45 @@ span.min-max-temp {
 }
 
 
+* {
+  box-sizing: border-box;
+}
+
+/* Style the search field */
+form.example input[type=text] {
+    margin-top:80px;
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.example button {
+  margin-top:80px;
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
 
 
