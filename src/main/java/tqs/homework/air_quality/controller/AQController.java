@@ -3,8 +3,6 @@ package tqs.homework.air_quality.controller;
 import tqs.homework.air_quality.model.AQResponse;
 import tqs.homework.air_quality.model.Data;
 import tqs.homework.air_quality.service.AQServiceImpl;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
 import org.springframework.stereotype.Controller;
@@ -40,12 +38,11 @@ public class AQController {
     }
 
     @GetMapping(value = "/airquality/{city_name}")
-    public String getAirQuality(Model model, @PathVariable("city_name") String city_name) throws Exception {
+    public String getAirQuality(Model model, @PathVariable("city_name") String city_name) {
 
         AQResponse aqresponse = AQService.getAirQuality(city_name);
         List<Data> data = aqresponse.getData();
         String unit = " µg/m³";
-
 
         model.addAttribute("city_name", city_name);
         model.addAttribute("mold_level", vals.get(data.get(0).getMold_level()));

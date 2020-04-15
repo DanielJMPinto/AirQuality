@@ -16,6 +16,7 @@ import java.util.List;
         "country_code",
         "state_code"
 })
+
 public class AQResponse {
 
     @JsonProperty("data")
