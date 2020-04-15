@@ -1,0 +1,86 @@
+
+wtqs.homework.air_quality.service.AQService#getAirQuality(Ljava/lang/String;)Ltqs/homework/air_quality/model/AQResponse;k
+a/home/daniel/uni/tqs/AirQuality_TQS/src/main/java/tqs/homework/air_quality/service/AQService.java (#"paramAnnotations*Ì
+paramAnnotationsk
+a/home/daniel/uni/tqs/AirQuality_TQS/src/main/java/tqs/homework/air_quality/service/AQService.java# (5»
+¸
+k
+a/home/daniel/uni/tqs/AirQuality_TQS/src/main/java/tqs/homework/air_quality/service/AQService.java (
+%7"
+__annotate*
+java.lang.Override*
+
+	city_namejava.lang.String×
+Ô
+k
+a/home/daniel/uni/tqs/AirQuality_TQS/src/main/java/tqs/homework/air_quality/service/AQService.java (!
+%8"
+__annotate*20
+.org.springframework.cache.annotation.Cacheable*
+
+	city_namejava.lang.String­
+ª
+k
+a/home/daniel/uni/tqs/AirQuality_TQS/src/main/java/tqs/homework/air_quality/service/AQService.java+ (4
+	city_namejava.lang.String"__annotation*
+
+%7*
+
+%8*
+1*†
+1k
+a/home/daniel/uni/tqs/AirQuality_TQS/src/main/java/tqs/homework/air_quality/service/AQService.java   (ï
+ì
+k
+a/home/daniel/uni/tqs/AirQuality_TQS/src/main/java/tqs/homework/air_quality/service/AQService.java   (7
+%01org.springframework.web.util.UriComponentsBuilder"__id*>*<,
+*tqs.homework.air_quality.service.AQService"
+
+urlbuilderéæ
+k
+a/home/daniel/uni/tqs/AirQuality_TQS/src/main/java/tqs/homework/air_quality/service/AQService.java   (D7
+%11org.springframework.web.util.UriComponentsBuilder"org.springframework.web.util.UriComponentsBuilder#replaceQueryParam(Ljava/lang/String;[Ljava/lang/Object;)Lorg/springframework/web/util/UriComponentsBuilder;*9
+7
+%01org.springframework.web.util.UriComponentsBuilder*
+city*
+
+	city_namejava.lang.String28replaceQueryParam(Ljava/lang/String;[Ljava/lang/Object;)ÍÊ
+k
+a/home/daniel/uni/tqs/AirQuality_TQS/src/main/java/tqs/homework/air_quality/service/AQService.java   (L0
+%2*org.springframework.web.util.UriComponents"eorg.springframework.web.util.UriComponentsBuilder#build()Lorg/springframework/web/util/UriComponents;*9
+7
+%11org.springframework.web.util.UriComponentsBuilder2build()—”
+k
+a/home/daniel/uni/tqs/AirQuality_TQS/src/main/java/tqs/homework/air_quality/service/AQService.java   (Z
+%3java.lang.String"Jorg.springframework.web.util.UriComponents#toUriString()Ljava/lang/String;*2
+0
+%2*org.springframework.web.util.UriComponents2toUriString()©
+¦
+k
+a/home/daniel/uni/tqs/AirQuality_TQS/src/main/java/tqs/homework/air_quality/service/AQService.java   ([
+urljava.lang.String"__id*
+
+%3java.lang.StringÐÍ
+k
+a/home/daniel/uni/tqs/AirQuality_TQS/src/main/java/tqs/homework/air_quality/service/AQService.java! !(1
+%4+org.springframework.web.client.RestTemplate"+org.springframework.web.client.RestTemplateâ
+ß
+k
+a/home/daniel/uni/tqs/AirQuality_TQS/src/main/java/tqs/homework/air_quality/service/AQService.java! !(!
+%5"5org.springframework.web.client.RestTemplate#<init>()V*3
+1
+%4+org.springframework.web.client.RestTemplateÄÁ
+k
+a/home/daniel/uni/tqs/AirQuality_TQS/src/main/java/tqs/homework/air_quality/service/AQService.java! !(E/
+%6)tqs.homework.air_quality.model.AQResponse"‚org.springframework.web.client.RestTemplate#getForObject(Ljava/lang/String;Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;*3
+1
+%4+org.springframework.web.client.RestTemplate*
+
+urljava.lang.String*
+""2DgetForObject(Ljava/lang/String;Ljava/lang/Class;[Ljava/lang/Object;)" 
+k
+a/home/daniel/uni/tqs/AirQuality_TQS/src/main/java/tqs/homework/air_quality/service/AQService.java! !(F1
+/
+%6)tqs.homework.air_quality.model.AQResponse:
+	city_namejava.lang.StringB.,
+*tqs.homework.air_quality.service.AQService

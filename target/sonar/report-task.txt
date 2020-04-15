@@ -1,0 +1,7 @@
+organization=danieljmpinto
+projectKey=DanielJMPinto_AirQuality_TQS
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.6674
+dashboardUrl=https://sonarcloud.io/dashboard?id=DanielJMPinto_AirQuality_TQS
+ceTaskId=AXF-Q-pPAeFMnDHSugY8
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AXF-Q-pPAeFMnDHSugY8

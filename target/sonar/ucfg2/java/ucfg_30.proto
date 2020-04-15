@@ -1,0 +1,45 @@
+
+_tqs.homework.air_quality.controller.AQController#showPage(Ljava/lang/String;)Ljava/lang/String;q
+g/home/daniel/uni/tqs/AirQuality_TQS/src/main/java/tqs/homework/air_quality/controller/AQController.javaE E("paramAnnotations*˛
+paramAnnotationsq
+g/home/daniel/uni/tqs/AirQuality_TQS/src/main/java/tqs/homework/air_quality/controller/AQController.javaE E(?›
+⁄
+q
+g/home/daniel/uni/tqs/AirQuality_TQS/src/main/java/tqs/homework/air_quality/controller/AQController.javaD D(
+%1"
+__annotate*75
+3org.springframework.web.bind.annotation.PostMapping*
+
+cityjava.lang.String‡
+›
+q
+g/home/daniel/uni/tqs/AirQuality_TQS/src/main/java/tqs/homework/air_quality/controller/AQController.javaE E(2
+%2"
+__annotate*:8
+6org.springframework.web.bind.annotation.ModelAttribute*
+
+cityjava.lang.StringÆ
+´
+q
+g/home/daniel/uni/tqs/AirQuality_TQS/src/main/java/tqs/homework/air_quality/controller/AQController.javaE: E(>
+cityjava.lang.String"__annotation*
+
+%1*
+
+%2*
+1*ÿ
+1q
+g/home/daniel/uni/tqs/AirQuality_TQS/src/main/java/tqs/homework/air_quality/controller/AQController.javaF F(&œ
+Ã
+q
+g/home/daniel/uni/tqs/AirQuality_TQS/src/main/java/tqs/homework/air_quality/controller/AQController.javaF F(+
+%0java.lang.String"__concat*
+redirect:/airquality/*
+
+cityjava.lang.String"ç
+q
+g/home/daniel/uni/tqs/AirQuality_TQS/src/main/java/tqs/homework/air_quality/controller/AQController.javaF F(,
+
+%0java.lang.String:
+cityjava.lang.StringB42
+0tqs.homework.air_quality.controller.AQController
