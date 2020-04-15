@@ -1,5 +1,6 @@
 package tqs.homework.air_quality.service;
 
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponentsBuilder;
@@ -25,7 +26,9 @@ public class AQService implements AQServiceImpl<AQResponse> {
 
 
     @Override
+    @Cacheable("city_airquality")
     public AQResponse getAirQuality(String city_name) {
+
         String url = urlbuilder.replaceQueryParam("city", city_name).build().toUriString();
         return new RestTemplate().getForObject(url, AQResponse.class);
     }

@@ -67,7 +67,6 @@ public class AQController {
 
     @PostMapping("/choosecity")
     public String showPage(@ModelAttribute("city") String city) {
-        System.out.println(city);
         return "redirect:/airquality/"+city;
 
     }
